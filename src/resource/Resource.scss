@@ -1,0 +1,113 @@
+.resource-container {
+  position: relative;
+  min-height: 98vh;
+  background-color: #FBFBFB;
+  height: fit-content;
+  overflow: auto;
+}
+
+.resource-container::-webkit-scrollbar{
+  display: none;
+}
+
+.tab-box {
+  width: 600px;
+  height: 40px;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%,-13%);
+  background-color: rgba(215, 223, 233, 0.24);
+  display: flex;
+  align-items: center;
+  font-family: "HK Grotesk", sans-serif;
+  border: 1px solid #d7dfe9;
+  border-radius: 5px;
+  @media only screen and (max-width: 650px) {
+    width: 300px;
+    height: 25px;
+    font-size: small;
+  }
+}
+.tab-box-element {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tab-box-resources {
+  border-right: 1px solid #d7dfe9;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tab-box-requests {
+}
+
+.tab-box-users {
+  border-left: 1px solid #d7dfe9;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.active-tab {
+  background: #0b69ff;
+  border: 1px solid #0b69ff;
+  color: white
+}
+
+.resource-search-bar{
+  width: 50%;
+  height: 7%;
+  background-image: url('../constants/search-icon.png');
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  @media only screen and (max-width: 770px) {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-position: 4% 50%;
+  }
+  @media only screen and (max-width: 450px) {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-position: 4% 50%;
+    width: 100%;
+  }
+  
+}
+
+
+.resource-area{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  @media only screen and (max-width: 955px) {
+    width: 90%
+  }
+  @media only screen and (max-width: 650px) {
+    text-align: center;
+  }
+}
+
+.all-resources{
+  display: flex;
+  height: 90%;
+  flex-wrap: wrap;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  @media only screen and (max-width: 650px) {
+    justify-content: center;
+  }
+  gap: 25px;
+}
