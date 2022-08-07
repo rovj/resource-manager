@@ -26,7 +26,7 @@ function ResourceItem(props) {
         </div>
       </div>
       <div className="resource-card-bottom">
-        <a href={resourceLink} className="resource-card-link">
+        <a href={resourceLink} className="resource-card-link" target="_blank">
           {resourceLink.replace("https://", "").replace("http://", "")}
         </a>
         <p className="resource-card-description">{resourceDescription}</p>
